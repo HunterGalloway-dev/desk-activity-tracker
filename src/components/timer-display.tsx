@@ -55,7 +55,7 @@ export function TimerDisplay({ timeRemaining, activeState, isActive }: TimerDisp
       </div>
 
       {(activeState === "standing" || activeState === "sitting") && isActive && (
-        <Progress value={getProgressValue()} className="h-2" indicatorClassName={getProgressColor()} />
+        <Progress value={getProgressValue()} className={`h-2 ${getProgressColor()}`} />
       )}
     </div>
   )
